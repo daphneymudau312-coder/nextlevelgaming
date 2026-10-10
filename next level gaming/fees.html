@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Fees | Next Level</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="Next Level home">
+        <span>NL</span>
+        <span>Next Level</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="overview.html">Overview</a>
+        <a href="packages.html">Packages</a>
+        <a href="fees.html">Calculate Fees</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <span>Fee calculator</span>
+        <h1>Estimate your total.</h1>
+        <p>Choose a package, enter the number of players and hours, and view a quick estimate including discounts and VAT.</p>
+      </section>
+
+      <section>
+        <div>
+          <h2>Calculate cost</h2>
+          <form id="fee-calculator" novalidate>
+            <div>
+              <label for="package">Package</label>
+              <select id="package" name="package">
+                <option value="">Select a package</option>
+                <option value="casual">Casual Gaming - R150 per player/hour</option>
+                <option value="competitive">Competitive Gaming - R220 per player/hour</option>
+                <option value="premium">Premium Arena - R300 per player/hour</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="players">Number of players</label>
+              <input id="players" name="players" type="number" min="1" placeholder="e.g. 5" />
+            </div>
+
+            <div>
+              <label for="hours">Number of hours</label>
+              <input id="hours" name="hours" type="number" min="1" step="0.5" placeholder="e.g. 2" />
+            </div>
+
+            <div id="calc-error" aria-live="polite"></div>
+            <button id="calculate-btn" type="submit">Calculate total</button>
+          </form>
+        </div>
+
+        <aside>
+          <h3>Estimated summary</h3>
+          <div><span>Subtotal</span><strong id="subtotal">R 0.00</strong></div>
+          <div><span>Discount</span><strong id="discount">R 0.00</strong></div>
+          <div><span>VAT (15%)</span><strong id="vat">R 0.00</strong></div>
+          <div><span>Total Amount</span><strong id="total">R 0.00</strong></div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Next Level Gaming & Esports Arena</strong>
+        <div>Johannesburg, South Africa</div>
+      </div>
+      <div>© 2026 Next Level. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

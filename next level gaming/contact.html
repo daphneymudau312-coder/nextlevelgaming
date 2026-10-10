@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Next Level</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" aria-label="Next Level home">
+        <span>NL</span>
+        <span>Next Level</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="overview.html">Overview</a>
+        <a href="packages.html">Packages</a>
+        <a href="fees.html">Calculate Fees</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <span>Contact</span>
+        <h1>Send us an enquiry.</h1>
+        <p>Whether you are planning a personal session, tournament, or group event, our team is ready to help.</p>
+      </section>
+
+      <section>
+        <div>
+          <div>
+            <span>Location</span>
+            <h3>Johannesburg, South Africa</h3>
+            <p>Visit the arena for gaming bookings, team experiences, and esports enquiries.</p>
+          </div>
+          <div>
+            <span>Enquiries</span>
+            <h3>General support</h3>
+            <p>Ask about gaming sessions, tournaments, school groups, and corporate bookings.</p>
+          </div>
+        </div>
+
+        <div>
+          <h2>Request a quote</h2>
+          <form id="contact-form" novalidate>
+            <div>
+              <label for="name">Full Name</label>
+              <input id="name" name="name" type="text" placeholder="Your full name" />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+
+            <div>
+              <label for="type">Enquiry Type</label>
+              <select id="type" name="type">
+                <option value="">Select enquiry type</option>
+                <option value="booking">Booking enquiry</option>
+                <option value="tournament">Tournament enquiry</option>
+                <option value="corporate">Corporate booking</option>
+                <option value="general">General enquiry</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your gaming or group needs..."></textarea>
+            </div>
+
+            <div id="contact-error" aria-live="polite"></div>
+            <div id="contact-success">Your enquiry has been sent successfully.</div>
+
+            <button type="submit">Send enquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>Next Level Gaming & Esports Arena</strong>
+        <div>Johannesburg, South Africa</div>
+      </div>
+      <div>© 2026 Next Level. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
