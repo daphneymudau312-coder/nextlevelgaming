@@ -46,3 +46,7 @@ This website was created as a prototype and can be updated with official busines
 References
 Assignment brief for Next Level Gaming & Esports Arena
 South African gaming and esports business concept
+
+
+FIGMA LINK:https://www.figma.com/proto/zqofO1uwpvbB9xPJrdqKFO/Untitled?node-id=4-2&p=f&t=tceDpCqrtzFERjNd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1
+
